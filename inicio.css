@@ -1,0 +1,76 @@
+/* Estilos exclusivos para la página de inicio */
+body.inicio {
+    background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
+    color: #e6e6e6;
+    font-family: "Segoe UI", sans-serif;
+    padding: 2rem;
+}
+
+/* Contenedor principal destacado */
+.inicio .hero {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Título principal */
+.inicio h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #00e5ff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Párrafos */
+.inicio p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Efecto sutil en enlaces del menú cuando estás en inicio */
+.navbar .nav-list li a {
+    transition: color 0.3s ease;
+}
+
+body.inicio .navbar .nav-list li a[href="index.html"] {
+    color: #00e5ff;
+    font-weight: bold;
+}
+/* Contenedor general: imagen izquierda + texto derecha */
+.presentacion-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+/* Imagen de perfil */
+.perfil-image {
+    width: 580px;
+    height: 580px;
+    border-radius: 50%;
+    border: 2px solid #00e5ff;
+
+    object-fit: cover;
+    object-position: center;
+
+    box-shadow:
+        0 0 8px rgba(0, 229, 255, 0.45),
+        0 0 18px rgba(0, 229, 255, 0.25);
+
+    flex-shrink: 0; /* evita que la imagen se deforme */
+}
+
+/* Texto */
+.presentacion-texto {
+    flex: 1;
+    line-height: 1.6;
+}
+

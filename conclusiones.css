@@ -1,0 +1,69 @@
+/* Contenedor de la imagen */
+.conclusiones-imagen {
+  flex: 1 1 500px;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 212, 255, 0.25);
+  box-shadow: 0 12px 30px rgba(0, 212, 255, 0.15);
+  cursor: zoom-in;
+}
+
+.conclusiones-imagen img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.conclusiones-imagen:hover img {
+  transform: scale(1.05);
+}
+
+/* FULLSCREEN OVERLAY */
+#fullscreen-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 999;
+}
+
+#fullscreen-overlay img {
+  width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.6);
+  cursor: zoom-out;
+}
+
+/* Clase que activa el fullscreen */
+#fullscreen-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* CONTENEDOR PRINCIPAL */
+.conclusiones-bloque {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* TEXTO A LA IZQUIERDA */
+.conclusiones-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* IMAGEN A LA DERECHA */
+.conclusiones-imagen {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}

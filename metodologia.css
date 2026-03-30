@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    /* Fondo base suave */
+    background: linear-gradient(
+        135deg,
+        #dfeff3 0%,
+        #e8f7fa 40%,
+        #f4fbfd 100%
+    );
+
+    /* Patrón IA MUY suave */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.015) 1px, transparent 1px);
+
+    background-size: 42px 42px; /* Cuadrícula más grande y más sutil */
+    background-blend-mode: overlay;
+
+    font-family: "Inter", "Roboto", "Segoe UI", sans-serif;
+    color: #1a1a1a;
+}
+
+
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+
+    /* Fondo intermedio: ni oscuro ni claro */
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+
+    /* Sombra suave estilo IA */
+    box-shadow:
+        0 0 14px rgba(0, 229, 255, 0.15),
+        0 0 28px rgba(0, 229, 255, 0.08);
+
+    backdrop-filter: blur(6px);
+
+    /* Tipografía muy legible */
+    font-family: "Inter", "Roboto", "Segoe UI", sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: #1a1a1a; /* Texto oscuro para máximo contraste */
+}
+
+/* Títulos principales */
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #005f73; /* Cian profundo, elegante */
+    font-weight: 700;
+}
+
+/* Subtítulos principales */
+main h3 {
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    color: #0a9396;
+}
+
+/* Subtítulos secundarios */
+main h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 1.6rem;
+    margin-bottom: 0.6rem;
+    color: #94d2bd;
+}
+
+/* Párrafos */
+main p {
+    margin-bottom: 1.2rem;
+    color: #1a1a1a; /* Muy legible */
+}
+
+/* Listas ordenadas */
+main ol {
+    margin-left: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+main ol li {
+    margin-bottom: 1rem;
+    line-height: 1.65;
+}
+
+/* Estilos específicos de la página de procedimiento */
+.procedimiento-investigacion {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #0f172a;
+  background: radial-gradient(circle at top left, #0ea5e933 0, transparent 55%),
+              radial-gradient(circle at bottom right, #6366f133 0, transparent 55%);
+}
+
+.procedimiento-investigacion h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.04em;
+  color: #020617;
+}
+
+.bloque-punto {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.bloque-punto::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(129, 140, 248, 0.08));
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.bloque-punto:hover::before {
+  opacity: 1;
+}
+
+.bloque-punto h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+  position: relative;
+  padding-left: 0.75rem;
+}
+
+.bloque-punto h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  width: 3px;
+  height: 1.1rem;
+  border-radius: 999px;
+  background: linear-gradient(to bottom, #0ea5e9, #6366f1);
+}
+
+.fig-punto {
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.fig-punto img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: radial-gradient(circle at top, #e0f2fe 0, #f8fafc 55%);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.18);
+}
+
+.fig-punto figcaption {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.4;
+  padding: 0.35rem 0.5rem 0;
+  border-top: 1px dashed rgba(148, 163, 184, 0.7);
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  .bloque-punto {
+    padding: 1.75rem 2rem;
+  }
+
+  .procedimiento-investigacion h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bloque-punto,
+  .bloque-punto::before {
+    transition: none;
+  }
+.footer-investigacion {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #e0faff;
+  padding: 2rem 1rem 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  background: #06b6d4; /* cyan */
+}
+
+.footer-investigacion p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer-investigacion .autor-link {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.25s ease;
+}
+
+.footer-investigacion .autor-link:hover {
+  opacity: 0.75;
+}
