@@ -1,0 +1,32 @@
+# robots.txt - Configuración de rastreo para motores de búsqueda
+# Últimaactualización: 30 de marzo de 2026
+
+# Permitir a todos los bots
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter
+User-agent: Twitterbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://sim-project.vercel.app/sitemap.xml
