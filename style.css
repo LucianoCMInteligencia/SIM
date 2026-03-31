@@ -59,13 +59,46 @@ header.header-container {
 }
 
 .nav-list a {
-    padding: 0.7rem 1.2rem;
+    /* Tamaño uniforme */
+    min-width: 130px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    
+    /* Estilos visuales */
+    padding: 0.1px;
     color: #fff;
     background: rgba(0, 212, 255, 0.25);
     border: 1px solid rgba(0, 212, 255, 0.4);
     border-radius: 6px;
     text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1;
     transition: 0.3s ease;
+}
+
+/* Tamaños de fuente ajustados por botón - Versión Senior */
+.nav-list .nav-inicio {
+    font-size: 2rem;
+}
+
+.nav-list .nav-introduccion {
+    font-size: 1.4rem;
+}
+
+.nav-list .nav-metodologia {
+    font-size: 1.5rem;
+}
+
+.nav-list .nav-resultados {
+    font-size: 1.6rem;
+}
+
+.nav-list .nav-conclusiones {
+    font-size: 1.4rem;
 }
 
 .nav-list a:hover {
@@ -469,9 +502,31 @@ button:active,
   }
 
   .nav-list a {
-    width: 90%;
-    text-align: center;
-    padding: 0.8rem 1rem;
+    min-width: 130px;
+    height: 44px;
+    font-size: 1.7rem;
+    padding: 0.1px;
+    line-height: 1;
+  }
+
+  .nav-list .nav-inicio {
+    font-size: 1.9rem;
+  }
+
+  .nav-list .nav-introduccion {
+    font-size: 1.35rem;
+  }
+
+  .nav-list .nav-metodologia {
+    font-size: 1.45rem;
+  }
+
+  .nav-list .nav-resultados {
+    font-size: 1.55rem;
+  }
+
+  .nav-list .nav-conclusiones {
+    font-size: 1.35rem;
   }
 
   main {
@@ -518,9 +573,31 @@ button:active,
   }
 
   .nav-list a {
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-    width: 100%;
+    min-width: 130px;
+    height: 44px;
+    font-size: 1.6rem;
+    padding: 0.1px;
+    line-height: 1;
+  }
+
+  .nav-list .nav-inicio {
+    font-size: 1.8rem;
+  }
+
+  .nav-list .nav-introduccion {
+    font-size: 1.28rem;
+  }
+
+  .nav-list .nav-metodologia {
+    font-size: 1.38rem;
+  }
+
+  .nav-list .nav-resultados {
+    font-size: 1.48rem;
+  }
+
+  .nav-list .nav-conclusiones {
+    font-size: 1.28rem;
   }
 
   /* Contenido principal */
@@ -626,10 +703,32 @@ button:active,
   }
 
   .nav-list a {
-    font-size: 0.8rem;
-    padding: 0.5rem 0.8rem;
-    width: 100%;
+    min-width: 120px;
+    height: 42px;
+    font-size: 1.4rem;
+    padding: 0.1px;
+    line-height: 1;
     border-radius: 4px;
+  }
+
+  .nav-list .nav-inicio {
+    font-size: 1.6rem;
+  }
+
+  .nav-list .nav-introduccion {
+    font-size: 1.1rem;
+  }
+
+  .nav-list .nav-metodologia {
+    font-size: 1.2rem;
+  }
+
+  .nav-list .nav-resultados {
+    font-size: 1.3rem;
+  }
+
+  .nav-list .nav-conclusiones {
+    font-size: 1.1rem;
   }
 
   /* Contenido */
