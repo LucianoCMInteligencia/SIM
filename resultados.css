@@ -84,16 +84,91 @@
 }
 
 /* ============================
-   RESPONSIVE
+   RESPONSIVE DESIGN
 ============================ */
 
-@media (max-width: 900px) {
+/* TABLET (768px) */
+@media (max-width: 768px) {
   .conclusiones-bloque {
     flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+    padding: 0.75rem;
   }
 
-  .conclusiones-imagen,
   .conclusiones-texto {
+    min-width: 100%;
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+  }
+
+  .conclusiones-imagen {
+    min-width: 100%;
     max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* MÓVIL GRANDE (480px) */
+@media (max-width: 480px) {
+  .conclusiones-bloque {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
+  }
+
+  .conclusiones-texto {
+    min-width: 100%;
+    padding: 1rem 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.08);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .conclusiones-imagen {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.1);
+  }
+
+  .conclusiones-imagen img {
+    transition: transform 0.25s ease;
+  }
+
+  .conclusiones-imagen:hover img {
+    transform: scale(1.02);
+  }
+
+  #fullscreen-overlay img {
+    width: 95vw;
+    max-height: 85vh;
+    border-radius: 10px;
+  }
+}
+
+/* MÓVIL EXTRA PEQUEÑO (menos de 360px) */
+@media (max-width: 360px) {
+  .conclusiones-bloque {
+    gap: 0.75rem;
+    margin: 0.8rem auto;
+    padding: 0.4rem;
+  }
+
+  .conclusiones-texto {
+    padding: 0.75rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+  }
+
+  .conclusiones-imagen {
+    border-radius: 6px;
+  }
+
+  #fullscreen-overlay img {
+    width: 98vw;
+    max-height: 80vh;
   }
 }
